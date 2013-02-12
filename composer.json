@@ -1,0 +1,10 @@
+{
+	"name": "li3_hybridauth",
+    "version": "0.1.0",
+    "config": {
+        "vendor-dir": "libraries"
+    },
+    "require": {
+        "hybridauth/hybridauth": "dev-master"
+    }
+}
