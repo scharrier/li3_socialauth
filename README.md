@@ -9,9 +9,8 @@ Installation
 The easiest way to install li3_socialauth is to use composer, adding this lines in your composer.json file:
 
     {
-        "minimum-stability": "dev",
         "require": {
-            "scharrier/li3_socialauth": "*"
+            "scharrier/li3_socialauth": "dev-master"
         }
     }
 
