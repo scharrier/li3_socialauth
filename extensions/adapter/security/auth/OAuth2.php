@@ -8,14 +8,14 @@ use OAuth\Common\Http\Uri\Uri;
 use OAuth\ServiceFactory ;
 
 /**
- * Twitter authentication.
+ * Base OAuth2 authentication class.
  */
 abstract class OAuth2 extends \lithium\core\Object {
 
 	/**
 	 * Session storage.
 	 * 
-	 * @var [type]
+	 * @var mixed
 	 */
 	protected $_storage ;
 
