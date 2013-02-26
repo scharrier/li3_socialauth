@@ -1,10 +1,24 @@
 {
-	"name": "li3_socialauth",
-    "version": "0.1.0",
-    "config": {
-        "vendor-dir": "libraries"
-    },
-    "require":{
-        "lusitanian/oauth": "*"
-    }
+	"name": "scharrier/li3_socialauth",
+	"version": "0.1.0",
+	"type": "library",
+	"description": "Lithium social oAuth adapters",
+	"authors": [
+		{
+			"name": "Sebastien Charrier",
+			"email": "scharrier@gmail.com"
+		}
+	],
+	"keywords" : ["authentication","oauth"],
+	"licence" : "MIT",
+	"homepage" : "http://github.com/scharrier/li3_socialauth/",
+	"require": {
+		"php" : ">=5.4.0"
+	},
+	"config": {
+		"vendor-dir": "libraries"
+	},
+	"require":{
+		"lusitanian/oauth": "*"
+	}
 }
