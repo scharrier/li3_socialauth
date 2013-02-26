@@ -1,5 +1,6 @@
 libraries/hybridauth
 libraries/composer
 libraries/autoload.php
+libraries/lusitanian
 composer.lock
 .DS_Store
