@@ -52,6 +52,30 @@ And then you can use this auth like any other auth mecanism in Lithium. Here is 
 
 And you are done.
 
+Universal Auth class
+--------------------
+
+Using this method of authentication, you will quickly have a lot of adapter to check in order to get the authed user. So we have created an universal Auth class witch checks every adapter when calling check() or clear() methods.
+
+Here is an example of usage :
+
+    // Using li3_socialauth instead of Lithium auth
+    use li3_socialauth\extensions\security\Auth;
+    
+    if (Auth::check()) {
+        echo 'Logout ?' ;
+    } else {
+        echo 'You should login first' ;
+    }
+    
+Supported services
+------------------
+
+Actually only 3 services are supported. More to come soon:
+- Twitter
+- Google
+- Microsoft
+
 Help and support
 ----------------
 
