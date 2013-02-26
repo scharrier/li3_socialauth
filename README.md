@@ -1,12 +1,12 @@
 li3_socialauth
 ==============
 
-Lithium universal oAuth plugin : uses the excellent oAuth library by Lusitanian (https://github.com/Lusitanian/PHPoAuthLib) to provide Li3 auth adapters. 
+Lithium universal oAuth plugin: uses the excellent oAuth library by Lusitanian (https://github.com/Lusitanian/PHPoAuthLib) to provide Li3 auth adapters. 
 
 Installation
 ------------
 
-The easiest way to install li3_socialauth is to use composer, adding this lines in your composer.json file :
+The easiest way to install li3_socialauth is to use composer, adding this lines in your composer.json file:
 
     {
         "minimum-stability": "dev",
@@ -15,11 +15,11 @@ The easiest way to install li3_socialauth is to use composer, adding this lines 
         }
     }
 
-Then update your project :
+Then update your project:
 
     composer update
 
-And load the library :
+And load the library:
 
     // config/bootstrap/libraries.php
     Libraries::add('li3_socialauth') ;
@@ -28,7 +28,7 @@ And load the library :
 Using li3_socialauth
 --------------------
 
-Each social auth type has its own Lithium auth adapter. Just define your new auth like this :
+Each social auth type has its own Lithium auth adapter. Just define your new auth like this:
 
     Auth::config(array(
       'twitter' => array(
@@ -38,7 +38,7 @@ Each social auth type has its own Lithium auth adapter. Just define your new aut
       )
     ));
 
-And then you can use this auth like any other auth mecanism in Lithium. Here is an example of an oauth controller :
+And then you can use this auth like any other auth mecanism in Lithium. Here is an example of an oauth login method:
 
     public function login() {
         // The user choose an external auth : adapter name given as the first param
@@ -55,9 +55,9 @@ And you are done.
 Universal Auth class
 --------------------
 
-Using this method of authentication, you will quickly have a lot of adapter to check in order to get the authed user. So we have created an universal Auth class witch checks every adapter when calling check() or clear() methods.
+Using this method of authentication, you will quickly have a lot of adapters to check in order to get the authed user. So I have created an universal Auth class witch checks each adapter when calling check() or clear() methods.
 
-Here is an example of usage :
+Here is an example of usage:
 
     // Using li3_socialauth instead of Lithium auth
     use li3_socialauth\extensions\security\Auth;
@@ -73,8 +73,8 @@ Supported services
 
 Actually only 3 services are supported. More to come soon:
 - Twitter
-- Google
-- Microsoft
+- Google+
+- Microsoft Live
 
 Help and support
 ----------------
