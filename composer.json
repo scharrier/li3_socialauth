@@ -19,6 +19,6 @@
 		"vendor-dir": "libraries"
 	},
 	"require":{
-		"lusitanian/oauth": "*"
+		"lusitanian/oauth": "dev-master"
 	}
 }
