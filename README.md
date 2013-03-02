@@ -70,8 +70,9 @@ Here is an example of usage:
 Supported services
 ------------------
 
-Actually only 3 services are supported. More to come soon:
+Actually only these services are supported. More to come soon:
 - Twitter
+- Facebook
 - Google+
 - Microsoft Live
 
