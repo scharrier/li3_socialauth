@@ -70,11 +70,13 @@ Here is an example of usage:
 Supported services
 ------------------
 
-Actually only these services are supported. More to come soon:
+Actually these services are supported. More to come soon:
 - Twitter
 - Facebook
 - Google+
 - Microsoft Live
+- Github
+- Foursquare
 
 Help and support
 ----------------
