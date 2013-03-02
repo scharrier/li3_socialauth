@@ -34,10 +34,16 @@ Each social auth type has its own Lithium auth adapter. Just define your new aut
       	'adapter' => 'Twitter',
           'key' => 'YOUR_KEY',
           'secret' => 'YOUR_SECRET'
+      ),
+      'facebook' => array(
+        'adapter' => 'Facebook',
+          'key' => 'YOUR_KEY',
+          'secret' => 'YOUR_SECRET',
+          'scope' => array('email','read_friendlists','user_online_presence')   // Extend the auth scope
       )
     ));
 
-And then you can use this auth like any other auth mecanism in Lithium. Here is an example of an oauth login method:
+Then you can use this auth like any other auth mecanism in Lithium. Here is an example of an oauth login method:
 
     public function login() {
         // The user choose an external auth : adapter name given as the first param
