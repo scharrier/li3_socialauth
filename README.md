@@ -22,6 +22,9 @@ And load the library:
 
     // config/bootstrap/libraries.php
     Libraries::add('li3_socialauth') ;
+    
+    // Add the composer autoloader if not already done
+    require_once(LITHIUM_LIBRARY_PATH . '/autoload.php') ;
 
 
 Using li3_socialauth
