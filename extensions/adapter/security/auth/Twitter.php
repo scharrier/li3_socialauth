@@ -14,14 +14,14 @@ class Twitter extends \lithium\core\Object {
 
 	/**
 	 * Session storage.
-	 * 
+	 *
 	 * @var [type]
 	 */
 	protected $_storage ;
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {
@@ -33,7 +33,7 @@ class Twitter extends \lithium\core\Object {
 	/**
 	 * Check the authentication. Will be called two times : first to request a token, and redirect
 	 * to the Twitter api url, then to authenticate the user.
-	 * 
+	 *
 	 * @param  [type] $request [description]
 	 * @param  array  $options [description]
 	 * @return [type]          [description]
@@ -55,10 +55,10 @@ class Twitter extends \lithium\core\Object {
 		    $url = $service->getAuthorizationUri(array('oauth_token' => $token->getRequestToken()));
 		    header('Location: ' . $url);
 		} else {
-			$token = $this->_storage->retrieveAccessToken();
+			$token = $this->_storage->retrieveAccessToken('Twitter');
 		    $service->requestAccessToken(
-		    	$request->query['oauth_token'], 
-		    	$request->query['oauth_verifier'], 
+		    	$request->query['oauth_token'],
+		    	$request->query['oauth_verifier'],
 		    	$token->getRequestTokenSecret()
 		    );
 
@@ -71,7 +71,7 @@ class Twitter extends \lithium\core\Object {
 
 	/**
 	 * Prepare the data to be stored.
-	 * 
+	 *
 	 * @param [type] $data    [description]
 	 * @param array  $options [description]
 	 */
@@ -81,7 +81,7 @@ class Twitter extends \lithium\core\Object {
 
 	/**
 	 * Clear the token session key.
-	 * 
+	 *
 	 * @param  array  $options [description]
 	 * @return [type]          [description]
 	 */
