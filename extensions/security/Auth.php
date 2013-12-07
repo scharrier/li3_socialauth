@@ -13,7 +13,7 @@ class Auth extends \lithium\security\Auth {
 	/**
 	 * Check if the user is connected. If no $name is given, check for each authentication
 	 * registered configuration.
-	 * 
+	 *
 	 * @param  string 	$name        Name of config, if specified
 	 * @param  mixed 	$credentials Credentials
 	 * @param  array  	$options     Options
@@ -34,7 +34,7 @@ class Auth extends \lithium\security\Auth {
 
 	/**
 	 * Clean every auth configuration.
-	 * 
+	 *
 	 * @param  string $name    Name of configuration, if specified
 	 * @param  array  $options Clear options
 	 */
@@ -44,7 +44,7 @@ class Auth extends \lithium\security\Auth {
 				parent::clear($name, $options) ;
 			}
 		} else {
-			parent::clear($name, $credentials, $options) ;
+			parent::clear($name, $options) ;
 		}
 	}
 }
