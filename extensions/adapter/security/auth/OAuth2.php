@@ -32,7 +32,7 @@ abstract class OAuth2 extends \lithium\core\Object {
 	/**
 	 * Check the authentication. Will be called two times : first to request a token, and redirect
 	 * to the Twitter api url, then to authenticate the user.
-	 * 
+	 *
 	 * @param  [type] $request [description]
 	 * @param  array  $options [description]
 	 * @return [type]          [description]
@@ -45,13 +45,13 @@ abstract class OAuth2 extends \lithium\core\Object {
 		    $this->_config['secret'],
 		    $here->getAbsoluteUri()
 		);
-
 		$serviceFactory = new ServiceFactory();
 		$service = $serviceFactory->createService(static::NAME, $credentials, $this->_storage, $this->_config['scope']);
 
 		if (empty($request->query['code'])) {
 		    $url = $service->getAuthorizationUri();
 		    header('Location: ' . $url);
+		    exit(0) ;
 		} else {
 		    $service->requestAccessToken($request->query['code']);
 		    $result = json_decode($service->request(static::USER_INFO), true);
