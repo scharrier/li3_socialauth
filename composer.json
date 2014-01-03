@@ -1,7 +1,6 @@
 {
 	"name": "scharrier/li3_socialauth",
 	"version": "0.1.0",
-	"type": "lithium-library",
 	"description": "Lithium social oAuth adapters",
 	"authors": [
 		{
@@ -15,11 +14,7 @@
 	"require": {
 		"php" : ">=5.3.6"
 	},
-	"config": {
-		"vendor-dir": "libraries"
-	},
 	"require":{
-		"lusitanian/oauth": "*",
-		"composer/installers":"*"
+		"lusitanian/oauth": "*"
 	}
 }
