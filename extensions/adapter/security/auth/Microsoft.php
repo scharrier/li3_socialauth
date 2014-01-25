@@ -11,7 +11,7 @@ class Microsoft extends OAuth2 {
 	/**
 	 * Service name
 	 */
-	const NAME = 'microsoft' ;
+	const NAME = 'Microsoft' ;
 
 	/**
 	 * User info URL
@@ -20,7 +20,7 @@ class Microsoft extends OAuth2 {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {

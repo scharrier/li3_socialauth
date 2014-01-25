@@ -11,7 +11,7 @@ class Foursquare extends OAuth2 {
 	/**
 	 * Service name
 	 */
-	const NAME = 'foursquare' ;
+	const NAME = 'Foursquare' ;
 
 	/**
 	 * User infos URL
@@ -20,7 +20,7 @@ class Foursquare extends OAuth2 {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {

@@ -6,12 +6,12 @@ use li3_socialauth\extensions\adapter\security\auth\OAuth2 ;
 /**
  * Github authentication.
  */
-class Github extends OAuth2 {
+class GitHub extends OAuth2 {
 
 	/**
 	 * Service name
 	 */
-	const NAME = 'github' ;
+	const NAME = 'GitHub' ;
 
 	/**
 	 * User infos URL
@@ -20,7 +20,7 @@ class Github extends OAuth2 {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {

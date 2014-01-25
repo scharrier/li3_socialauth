@@ -11,7 +11,7 @@ class Facebook extends OAuth2 {
 	/**
 	 * Service name
 	 */
-	const NAME = 'facebook' ;
+	const NAME = 'Facebook' ;
 
 	/**
 	 * User infos URL
@@ -20,7 +20,7 @@ class Facebook extends OAuth2 {
 
 	/**
 	 * Constructor
-	 * 
+	 *
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {
