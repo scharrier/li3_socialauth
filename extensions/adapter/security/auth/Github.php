@@ -24,7 +24,7 @@ class GitHub extends OAuth2 {
 	 * @param array $config [description]
 	 */
 	public function __construct(array $config = array()) {
-		$config += array('tokenKey' => 'oauth_token', 'scope' => array('user')) ;
+		$config += array('tokenKey' => 'oauth_token', 'scope' => array('user:email')) ;
 		parent::__construct($config) ;
 	}
 }
