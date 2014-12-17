@@ -1,6 +1,8 @@
 li3_socialauth
 ==============
 
+> I'm sorry, this li3 package isn't still maintained. If someone wants to take the lead, just ping me.
+
 Lithium universal oAuth plugin: uses the excellent oAuth library by Lusitanian (https://github.com/Lusitanian/PHPoAuthLib) to provide Li3 auth adapters. 
 
 Installation
